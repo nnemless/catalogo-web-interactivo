@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Sonora Turística</title>
+    <meta name="description" content="Ponte en contacto con el Sistema Turístico de Sonora para planear tu próxima aventura.">
+    <meta property="og:title" content="Contacto - Sonora Turística">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234F46E5'/><path d='M7 23 L13 13 L17 19 L25 9' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <a href="#main" class="skip-link">Saltar al contenido</a>
+
+    <header class="main-header">
+        <div class="logo">Sistema Turístico de Sonora</div>
+        <nav class="main-nav">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Destinos</a>
+            <a href="contacto.html" class="active">Contacto</a>
+            <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema" aria-pressed="false">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero-section hero-contact">
+        <div class="hero-content">
+            <h1>Contáctanos</h1>
+            <p>Estamos listos para ayudarte a planear tu próxima aventura</p>
+        </div>
+    </section>
+
+    <main id="main" class="contact-container">
+
+        <div class="contact-info">
+            <h2>Ponte en contacto</h2>
+            <p>¿Tienes dudas sobre una ruta? ¿Eres prestador de servicios y quieres unirte? Escríbenos por cualquiera de estos medios.</p>
+
+            <div class="contact-methods">
+                <a href="mailto:info@turismosonora.mx" class="method-card gmail">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="method-text">
+                        <h3>Correo Electrónico</h3>
+                        <span>info@turismosonora.mx</span>
+                    </div>
+                </a>
+
+                <a href="https://wa.me/526621234567" target="_blank" class="method-card whatsapp">
+                    <div class="icon-box">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div class="method-text">
+                        <h3>WhatsApp</h3>
+                        <span>+52 (662) 123 4567</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="office-info">
+                <h3><i class="fa-solid fa-building"></i> Oficinas Centrales</h3>
+                <p>Blvd. Kino 123, Col. Pitic<br>Hermosillo, Sonora, México.</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3486.27666678392!2d-110.94362072533224!3d29.097512362815294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ce85cfbda37e07%3A0xc88acd56bc7b51e6!2sBlvd.%20Fco.%20Eusebio%20Kino%2C%20Hermosillo%2C%20Son.!5e0!3m2!1ses-419!2smx!4v1763764173154!5m2!1ses-419!2smx"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+            <form id="contactForm" class="contact-form">
+                <h2>Envíanos un mensaje</h2>
+
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" placeholder="tucorreo@ejemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="asunto">Asunto</label>
+                    <select id="asunto">
+                        <option value="informacion">Solicitar información</option>
+                        <option value="soporte">Soporte técnico</option>
+                        <option value="alianza">Alianza comercial</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" rows="5" placeholder="¿Cómo podemos ayudarte?" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">Sistema Turístico de Sonora</div>
+                <p>Plataforma de catálogo turístico interactivo que promueve los destinos y servicios del estado de Sonora.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                    <li><a href="catalogo.html"><i class="fa-solid fa-map-location-dot"></i> Destinos</a></li>
+                    <li><a href="contacto.html"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="catalogo.html"><i class="fa-solid fa-compass"></i> Explorar</a></li>
+                    <li><a href="contacto.html"><i class="fa-solid fa-circle-question"></i> Ayuda</a></li>
+                    <li><a href="#"><i class="fa-solid fa-file-lines"></i> Aviso de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="mailto:info@turismosonora.mx"><i class="fa-solid fa-envelope"></i> info@turismosonora.mx</a></li>
+                    <li><a href="https://wa.me/526621234567" target="_blank"><i class="fa-brands fa-whatsapp"></i> +52 (662) 123 4567</a></li>
+                    <li><a href="#"><i class="fa-solid fa-location-dot"></i> Hermosillo, Son.</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-inner">
+               <span>© 2026 Sistema Turístico de Sonora</span>
+                <span><a href="#">Privacidad</a> · <a href="#">Términos</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Volver arriba"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="contacto.js"></script>
+    <script src="theme.js"></script>
+
+</body>
+</html>

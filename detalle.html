@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Destino - Sonora Turística</title>
+    <meta name="description" content="Información completa del destino: galería, servicios, itinerario sugerido y ubicación.">
+    <meta property="og:title" content="Detalle del Destino - Sonora Turística">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234F46E5'/><path d='M7 23 L13 13 L17 19 L25 9' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <a href="#detalle-container" class="skip-link">Saltar al contenido</a>
+
+    <header class="main-header">
+        <div class="logo">Sistema Turístico de Sonora</div>
+        <nav class="main-nav">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html" class="active">Destinos</a>
+            <a href="contacto.html">Contacto</a>
+            <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema" aria-pressed="false">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main id="detalle-container" class="detalle-container">
+        <div class="loading">
+            <i class="fa-solid fa-spinner fa-spin"></i> Cargando destino...
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">Sistema Turístico de Sonora</div>
+                <p>Plataforma de catálogo turístico interactivo que promueve los destinos y servicios del estado de Sonora.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                    <li><a href="catalogo.html"><i class="fa-solid fa-map-location-dot"></i> Destinos</a></li>
+                    <li><a href="contacto.html"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="catalogo.html"><i class="fa-solid fa-compass"></i> Explorar</a></li>
+                    <li><a href="contacto.html"><i class="fa-solid fa-circle-question"></i> Ayuda</a></li>
+                    <li><a href="#"><i class="fa-solid fa-file-lines"></i> Aviso de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="mailto:info@turismosonora.mx"><i class="fa-solid fa-envelope"></i> info@turismosonora.mx</a></li>
+                    <li><a href="https://wa.me/526621234567" target="_blank"><i class="fa-brands fa-whatsapp"></i> +52 (662) 123 4567</a></li>
+                    <li><a href="#"><i class="fa-solid fa-location-dot"></i> Hermosillo, Son.</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-inner">
+                <span>© 2026 Sistema Turístico de Sonora</span>
+                <span><a href="#">Privacidad</a> · <a href="#">Términos</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Volver arriba"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="data.js"></script>
+    <script src="detalle.js"></script>
+    <script src="theme.js"></script>
+
+</body>
+</html>
